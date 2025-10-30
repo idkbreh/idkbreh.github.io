@@ -5,18 +5,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Patcharapol Rungsisakorn | IT Portfolio</title>
   <meta name="description" content="Full-Stack Developer & ICT student portfolio of Patcharapol Rungsisakorn.">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Roboto Mono -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- GitHub-like Markdown styles -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown.min.css">
 
-  <style>
-    body { font-family: "Roboto Mono", monospace; background:#fafafa; }
-    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    .markdown-body { background:#fff; border:1px solid #eee; border-radius:12px; padding:28px; }
-    a { color:#0b65d8; }
-  </style>
+<style>
+  /* Base */
+  body { background:#fafafa; }
+
+  /* Force Roboto Mono on rendered markdown */
+  .markdown-body, 
+  .markdown-body * {
+    font-family: "Roboto Mono", monospace !important;
+  }
+
+  /* Optional: headings weight */
+  .markdown-body h1, 
+  .markdown-body h2, 
+  .markdown-body h3 {
+    font-weight: 700 !important;
+  }
+</style>
+
 </head>
 <body>
   <div class="container">
