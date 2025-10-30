@@ -48,10 +48,7 @@ Merit Scholarship Recipient
 **Tech Stack:** Vite.js, MongoDB, Express.js  
 - Oversaw project workflow and backend architecture for a school community platform.
 
-### **Pentester @ STH**  
-*2025*  
-- Performed penetration testing, reverse engineering, and forensic analysis.  
-- Focused on identifying vulnerabilities and securing system infrastructure.
+
 
 ---
 
