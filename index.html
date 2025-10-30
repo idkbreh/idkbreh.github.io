@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Patcharapol Rungsisakorn | IT Portfolio</title>
+  <meta name="description" content="Full-Stack Developer & ICT student portfolio of Patcharapol Rungsisakorn.">
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Roboto Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- GitHub-like Markdown styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.5.1/github-markdown.min.css">
 
   <style>
-    body {
-      font-family: 'Roboto Mono', monospace;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      background-color: #fafafa;
-      color: #222;
-    }
-    h1, h2, h3 {
-      font-weight: 600;
-      color: #111;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: "Roboto Mono", monospace; background:#fafafa; }
+    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .markdown-body { background:#fff; border:1px solid #eee; border-radius:12px; padding:28px; }
+    a { color:#0b65d8; }
   </style>
 </head>
 <body>
+  <div class="container">
+    <article id="content" class="markdown-body">Loading portfolio…</article>
+  </div>
+
+  <!-- Marked.js to convert Markdown -> HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    async function loadREADME() {
+      try {
+        const res = await fetch('README.md', { cache: 'no-store' });
+        if (!res.ok) throw new Error('README not found');
+        const md = await res.text();
+        document.getElementById('content').innerHTML = marked.parse(md, { mangle:false, headerIds:false });
+      } catch (e) {
+        document.getElementById('content').innerHTML = `
+          <p>Couldn’t load README.md. You can <a href="README.md">view it directly here</a>.</p>
+        `;
+      }
+    }
+    loadREADME();
+  </script>
 </body>
 </html>
