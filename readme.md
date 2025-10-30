@@ -10,7 +10,6 @@ Hi, I’m **Patcharapol Rungsisakorn** — a Full-Stack Developer and Data Scien
 With experience in both frontend and backend development, I specialize in building seamless user experiences backed by secure and scalable systems.  
 I’m passionate about technology that connects creativity, logic, and impact.
 
-📍 **Location:** 408 Sky Park Condo, Salaya, Phuttamonthon, Nakhon Pathom, Thailand  
 📧 **Email:** [topdaway@gmail.com](mailto:topdaway@gmail.com)  
 📱 **Phone:** 084-106-3138  
 
@@ -97,8 +96,8 @@ I’m passionate about technology that connects creativity, logic, and impact.
 
 ## 🌐 Links
 - **GitHub:** [https://github.com/patcharapolr](https://github.com/patcharapolr)  
-- **LinkedIn:** *(Add your LinkedIn link here)*  
-- **Portfolio (GitHub Pages):** *(Will appear once you enable Pages)*  
+
+- 📄 [Download My Resume](./resume.pdf)
 
 ---
 
