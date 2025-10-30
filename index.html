@@ -35,6 +35,40 @@ html, body {
   .markdown-body h3 {
     font-weight: 700 !important;
   }
+  <meta name="color-scheme" content="light">
+
+<style>
+  /* Force light everywhere */
+  :root { color-scheme: light !important; }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* GitHub/Primer variables override (what actually paints .markdown-body) */
+  .markdown-body {
+    --color-canvas-default: #ffffff !important;
+    --color-canvas-subtle:  #ffffff !important;
+    --color-fg-default:     #000000 !important;
+    --color-border-default: #d0d7de !important;
+    --color-accent-fg:      #000000 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Belt-and-suspenders: if the browser prefers dark, still keep it light */
+  @media (prefers-color-scheme: dark) {
+    html, body, .container, .markdown-body, .markdown-body * {
+      background: #fff !important;
+      color: #000 !important;
+      border-color: #d0d7de !important;
+    }
+  }
+
+  /* Optional: keep links readable in forced light */
+  .markdown-body a { color: #000 !important; text-decoration: underline; }
+</style>
   .container {
   max-width: 900px;
   margin: 60px auto; /* top/bottom 60px, center horizontally */
