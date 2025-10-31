@@ -93,8 +93,7 @@ Merit Scholarship Recipient
 
 ## Links 
 - 📄 [Download My Resume](./resume.pdf)
+-  [Linkedin](www.linkedin.com/in/patcharapol-rungsisakorn-61499b390)
 
 ---
-
-> 💬 *“Innovation happens when creativity meets persistence.”*  
 > — Patcharapol Rungsisakorn
